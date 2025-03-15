@@ -22,6 +22,23 @@
             padding: 20px; /* Padding di dalam sidebar */
             width: 285px; /* Lebar sidebar */
             transition: left 0.3s ease-in-out; /* Animasi saat sidebar muncul */
+            overflow-y: auto; /* Aktifkan scroll vertikal jika konten lebih panjang */
+            scrollbar-width: thin; /* Memperkecil scrollbar di Firefox */
+            scrollbar-color: #6c757d #343a40; /* Warna scrollbar */
+        }
+
+        /* Untuk tampilan scrollbar di WebKit (Chrome, Edge, Safari) */
+        .sidebar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background-color: #6c757d; /* Warna thumb scrollbar */
+            border-radius: 10px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background-color: #343a40; /* Warna track scrollbar */
         }
         .content {
             text-align: center; /* Pusatkan teks */
@@ -98,12 +115,19 @@
                 </a>
                 <ul id="pujianList" class="submenu">
                     <li><a class="nav-link text-white" href="pujian1.html">1. KJ 10-Pujilah Tuhan Sang Raja</a></li>
+                    <hr>
                     <li><a class="nav-link text-white" href="pujian2.html">2. KJ 422-Yesus Berpesan</a></li>
+                    <hr>
                     <li><a class="nav-link text-white" href="pujian3.html">3. Hidup Ini Adalah Kesempatan</a></li>
+                    <hr>
                     <li><a class="nav-link text-white" href="pujian4.html">4. KJ 424-Yesus Menginginkan Daku</a></li>
+                    <hr>
                     <li><a class="nav-link text-white" href="pujian5.html">5. Indahnya Kasih Tuhan</a></li>
-                    <li><a class="nav-link text-white" href="pujian5.html">6. Api Kemuliaan-Nya</a></li>
-                    <li><a class="nav-link text-white" href="pujian5.html">7. Tak Berubah</a></li>
+                    <hr>
+                    <li><a class="nav-link text-white" href="pujian6.html">6. Api Kemuliaan-Nya</a></li>
+                    <hr>
+                    <li><a class="nav-link text-white" href="pujian7.html">7. Tak Berubah</a></li>
+                    <hr>
                 </ul>
             </li>
         </ul>
